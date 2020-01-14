@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <title>СберМобайл</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">  
+  <style>
+    @media (max-width: 768px) {
+      .header__logo-pic {
+        background: url(./img/svg/logo-wh.svg) no-repeat center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header__logo">
+      <a class="header__logo-link" href="/">
+        <div class="header__logo-pic"></div>
+      </a>
+    </div>
+  </header>
+  <main class="main">
+    <section class="enter-code">
+      <div class="enter-code__wrapper">
+      <div class="enter-code__main">
+        <h1 class="enter-code__title">Введите шестизначный код, указанный на оборотной стороне подарочной карты</h1>
+        <form class="enter-code__form">
+          <input class="enter-code__input" placeholder="Введите шестизначый код" type="text" name="user-code" maxlength="6">
+            <div>
+              <button class="enter-code__button" type="submit">Далее</button>
+            </div>
+          </form>
+        </div>
+        <div class="enter-code__background"></div>
+      </div>
+    </section>  
+  </main>
+</body>
+</html>
