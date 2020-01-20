@@ -1005,7 +1005,7 @@ body {
 /* select-tariff section css is here */
 
 .plans {
-  transform: scale(0.9);
+  /* transform: scale(0.9); */
 }
 
 .select-tariff {
@@ -1026,7 +1026,7 @@ body {
 }
 
 .select-tariff__area {
-  width: 100%
+  width: 100%;
   max-width: 1032px;
   height: 554px;
   background: #FFFFFF;
@@ -1050,10 +1050,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0px 60px;
 }
 
 .delivery__title {
-  text-align: center;
+
   padding-top: 142px;
   padding-bottom: 60px;
   font-weight: bold;
@@ -1066,6 +1067,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
   max-width: 1030px;
   max-height: 785px;
   background: #FFFFFF;
@@ -1078,15 +1080,15 @@ body {
   margin-bottom: 135px;
 }
 
-.delivery__info-top{
-  width: 1030px;
+.delivery__info-top {
   min-height: 200px;
   border-bottom: 1px solid #EDEDED;
 }
 
-.delivery__wrapper{
+.delivery__wrapper {
   margin: 0 auto;
-  width: 755px;
+  width: 100%;
+  max-width: 755px;
 }
 
 .delivery__info-text-area {
@@ -1208,7 +1210,6 @@ body {
 }
 
 .delivery__info-bottom {
-  width: 1030px;
   min-height: 200px;
 }
 
@@ -1392,6 +1393,60 @@ body {
 .delivery__button:hover, .delivery__button:focus, .delivery__button:active {
   background: #319B42;
 }
+
+@media screen and (max-width: 1024px) {
+  
+  .delivery {
+    margin: 0px 120px 0px 65px;
+    align-items: flex-start;
+  }
+
+  .delivery__wrapper {
+  	max-width: none;
+  	padding: 0px 40px;
+  }
+
+  .delivery__title {
+  	padding-top: 135px;
+  	padding-bottom: 40px;
+  	font-size: 30px;
+    line-height: 45px;
+  }
+  
+  .delivery__info-title-top {
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+
+  .delivery__form {
+  	padding-bottom: 0px;
+  }
+
+  .delivery__form-city {
+  	margin-bottom: 24px;
+  }
+
+  .delivery__form-address {
+  	margin-bottom: 24px;
+  }
+
+  .delivery__info-title-bottom {
+  	font-size: 20px;
+  	margin-top: 5px;
+    margin-bottom: 14px;
+  }
+  
+  .delivery__payment {
+    padding-bottom: 42px;
+  }
+  
+  
+}
+
+
+
+
 
 /* trying to use styles from sbermobile.ru */
 
