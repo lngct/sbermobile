@@ -1113,100 +1113,44 @@ body {
   padding-bottom: 30px;
 }
 
-.delivery__form-name {
+.delivery__form-input::placeholder {
+  color: #CECECE;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.delivery__form-input {
   padding-left: 30px;
   height: 53px;
   background: #F8F8F8;
   border: 0;
   border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.name {
   flex-basis: 64%;
-  margin-bottom: 30px;
 }
 
-.delivery__form-name::placeholder {
-  color: #CECECE;
-  font-size: 16px;
-  line-height: 22px;
-}
-
-.delivery__form-phone {
-  padding-left: 30px;
-  height: 53px;
-  background: #F8F8F8;
-  border: 0;
-  border-radius: 5px;
+.phone {
   flex-basis: 34%;
-  margin-bottom: 30px;
 }
 
-.delivery__form-phone::placeholder {
-  color: #CECECE;
-  font-size: 16px;
-  line-height: 22px;
-}
-
-.delivery__form-date {
-  padding-left: 30px;
-  height: 53px;
-  background: #F8F8F8;
-  border: 0;
-  border-radius: 5px;
+.date {
   flex-basis: 49%;
-  margin-bottom: 30px;
 }
 
-.delivery__form-date::placeholder {
-  color: #CECECE;
-  font-size: 16px;
-  line-height: 22px;
-}
-
-.delivery__form-time {
-  padding-left: 30px;
-  height: 53px;
-  background: #F8F8F8;
-  border: 0;
-  border-radius: 5px;
+.time {
   flex-basis: 49%;
-  margin-bottom: 30px;
 }
 
-.delivery__form-time::placeholder {
-  color: #CECECE;
-  font-size: 16px;
-  line-height: 22px;
-}
-
-.delivery__form-city {
-  padding-left: 30px;
-  height: 53px;
-  background: #F8F8F8;
-  border: 0;
-  border-radius: 5px;
+.city {
   flex-basis: 49%;
-  margin-bottom: 30px;
 }
 
-.delivery__form-city::placeholder {
-  color: #CECECE;
-  font-size: 16px;
-  line-height: 22px;
-}
-
-.delivery__form-address {
-  padding-left: 30px;
-  height: 53px;
-  background: #F8F8F8;
-  border: 0;
-  border-radius: 5px;
+.address {
   flex-basis: 49%;
-  margin-bottom: 30px;
-}
-
-.delivery__form-address::placeholder {
-  color: #CECECE;
-  font-size: 16px;
-  line-height: 22px;
 }
 
 .delivery__info-bottom {
@@ -1223,7 +1167,7 @@ body {
 }
 
 .delivery__summary {
-  max-width: 250px;
+  flex-basis: 49%;
 }
 
 .delivery__summary-option {
@@ -1275,6 +1219,7 @@ body {
 
 .delivery__check-and-button-area {
   max-width: 320px;
+  flex-basis: 49%;
 }
 
 .delivery__additional-info {
@@ -1423,12 +1368,12 @@ body {
   	padding-bottom: 0px;
   }
 
-  .delivery__form-city {
-  	margin-bottom: 24px;
+  .city {
+  	margin-bottom: 24px !important;
   }
 
-  .delivery__form-address {
-  	margin-bottom: 24px;
+  .address {
+  	margin-bottom: 24px !important;
   }
 
   .delivery__info-title-bottom {
@@ -1441,10 +1386,64 @@ body {
     padding-bottom: 42px;
   }
   
-  
+  .delivery__summary {
+    margin-right: 2%;
+  }
+  .delivery__info-text-area {
+  	justify-content: flex-start;
+  }
+
+  .delivery__button {
+  	float: left;
+  }
 }
 
+@media screen and (max-width: 880px) {
+    .delivery__additional-info {
+    padding-bottom: 15px;
+  }
 
+  .checkbox-container {
+    padding-bottom: 40px;
+  }
+
+  .delivery__button {
+  	width: 100%;
+  	font-size: 14px;
+  	padding: 18px 0px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .delivery {
+    margin: 0px 70px 0px 40px;  	
+  }
+
+  .delivery__title {
+  	padding-top: 150px;
+  }
+
+  .delivery__form-input {
+  	padding-left: 23px;
+  	margin-bottom: 28px;
+  }
+  
+  .name {
+    flex-basis: 60%;
+  }
+
+  .phone {
+    flex-basis: 38%;
+  }
+  
+  .delivery__check-and-button-area {
+  	flex-basis: 47%;
+  }
+
+
+}
 
 
 
