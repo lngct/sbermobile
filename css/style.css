@@ -1069,7 +1069,6 @@ body {
   justify-content: center;
   width: 100%;
   max-width: 1030px;
-  max-height: 785px;
   background: #FFFFFF;
   /* Gray/5 */
   border: 1px solid #EDEDED;
@@ -1081,7 +1080,6 @@ body {
 }
 
 .delivery__info-top {
-  min-height: 200px;
   border-bottom: 1px solid #EDEDED;
 }
 
@@ -1154,7 +1152,7 @@ body {
 }
 
 .delivery__info-bottom {
-  min-height: 200px;
+
 }
 
 .delivery__info-title-bottom {
@@ -1184,7 +1182,7 @@ body {
   padding-bottom: 8px;
 }
 
-.delivery__summary-option-name.delivery-type {
+.delivery-type {
   padding-bottom: 24px;
 }
 
@@ -1197,7 +1195,7 @@ body {
 }
 
 .delivery__payment {
-  padding-bottom: 66px;
+  margin-bottom: 66px;
 }
 
 .delivery__payment-type {
@@ -1333,6 +1331,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #FEFEFE;
+  margin-bottom: 42px;
 }
 
 .delivery__button:hover, .delivery__button:focus, .delivery__button:active {
@@ -1383,7 +1382,7 @@ body {
   }
   
   .delivery__payment {
-    padding-bottom: 42px;
+    margin-bottom: 42px;
   }
   
   .delivery__summary {
@@ -1398,8 +1397,13 @@ body {
   }
 }
 
-@media screen and (max-width: 880px) {
-    .delivery__additional-info {
+@media screen and (max-width: 930px) {
+
+  .delivery {
+    margin: 0px 70px 0px 40px;  	
+  }
+
+  .delivery__additional-info {
     padding-bottom: 15px;
   }
 
@@ -1413,39 +1417,172 @@ body {
   	padding: 18px 0px;
     line-height: 25px;
   }
+
+  .delivery__form-input {
+  	padding-left: 22px;
+  }
+
+  .name {
+    flex-basis: 60%;
+    margin-right: 10px;
+  }
+
+  .phone {
+    flex-basis: 38%;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
-
-  .delivery {
-    margin: 0px 70px 0px 40px;  	
-  }
 
   .delivery__title {
   	padding-top: 150px;
   }
 
   .delivery__form-input {
-  	padding-left: 23px;
   	margin-bottom: 28px;
-  }
-  
-  .name {
-    flex-basis: 60%;
-  }
-
-  .phone {
-    flex-basis: 38%;
   }
   
   .delivery__check-and-button-area {
   	flex-basis: 47%;
   }
 
+}
+
+@media screen and (max-width: 720px) {
+  
+  .delivery__info-text-area {
+    justify-content: space-between;
+  }
+
+  .delivery__form {
+  	flex-direction: column; 
+  }
+
+  .name {
+  	margin-right: 0;
+  }
+
+  .delivery__form-input {
+  	flex-basis: auto;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  
+  .delivery {
+  	margin: 0 auto;
+  	align-items: center;
+  }
+
+  .delivery__info-text-area {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .delivery__area {
+  	border: 0;
+  	box-shadow: none;
+  	margin-bottom: 0;
+  }
+  
+  .delivery__info-title-top {
+  	text-align: center;
+  }
+
+  .delivery__form-input {
+  	text-align: center;
+  	padding-left: 0;
+  }
+
+  .delivery__info-title-bottom {
+    text-align: center;
+  }
+
+  .delivery__summary {
+  	margin-right: 0;
+  	flex-basis: 0;
+  	display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .delivery__check-and-button-area {
+  	flex-basis: 0;
+  	display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .delivery__payment {
+  	text-align: center;
+  	margin-bottom: 46px;
+  }
+
+
 
 }
 
+@media screen and (max-width: 375px) {
+  .delivery__title {
+  	padding-top: 130px;
+  	padding-bottom: 45px;
+  	font-size: 16px;
+    line-height: 19px;
+  }
 
+  .delivery__info-title-top {
+    display: none;
+  }
+
+  .delivery__form-input {
+    margin-bottom: 10px !important;
+  }
+
+  .delivery__form-input:last-child {
+    margin-bottom: 43px !important;
+  }
+
+  .delivery__info-title-bottom {
+  	margin-top: 28px;
+  	margin-bottom: 27px;
+  	font-size: 16px;
+    line-height: 19px;
+  }
+
+  .delivery__summary-tariff-conditions {
+  	text-align: center;
+  	margin-bottom: 23px;
+  	padding-bottom: 0;
+  }
+
+  .delivery-type {
+  	padding-bottom: 0;
+  	margin-bottom: 33px;
+  }
+
+  .delivery__additional-info {
+  	padding-bottom: 23px;
+  }
+
+  .checkbox-container {
+  	max-width: 273px;
+  	padding-bottom: 0;
+  	margin-bottom: 23px;
+  }
+
+  .checkbox-text {
+  	font-size: 10px;
+  	line-height: 14px;
+  }
+
+  .delivery__button {
+  	font-size: 16px;
+  	line-height: 24px;
+  	padding: 18px 54px;
+  }
+
+}
 
 /* trying to use styles from sbermobile.ru */
 
