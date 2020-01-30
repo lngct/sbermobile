@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
+<html lang="ru" class="fp-enabled" style="overflow: hidden; height: 100%;"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <title>СберМобайл</title>
+  <link rel="stylesheet" type="text/css" href="./css/style_from_sbermobile.css"> 
   <link rel="stylesheet" type="text/css" href="./css/style.css">  
+  <link rel="stylesheet" type="text/css" href="./css/fullpage.css">  
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap" rel="stylesheet">
+<!--
   <style>
     @media (max-width: 768px) {
       .header__logo-pic {
@@ -13,16 +17,21 @@
       }
     }
   </style>
+-->
 </head>
-<body>
+<body class="fp-viewing-0" style="overflow: hidden; height: 100%;">
   <header class="header">
-    <div class="header__logo">
-      <a class="header__logo-link" href="/">
-        <div class="header__logo-pic"></div>
-      </a>
+    <div class="header__wrapper">
+      <div class="header__logo">
+        <a class="header__logo-link" href="/">
+          <div class="header__logo-pic"></div>
+        </a>
+      </div>
     </div>
   </header>
-  <main class="main">
+      <div id="fp-nav" class="fp-nav fp-right" style="margin-top: -43.5px;"><ul><li><a href="#" class="active"><span class="fp-sr-only">First page</span><span></span></a><div class="fp-tooltip fp-right">First page</div></li><li><a href="#" class=""><span class="fp-sr-only">Second page</span><span></span></a><div class="fp-tooltip fp-right">Second page</div></li><li><a href="#" class=""><span class="fp-sr-only">Third and last page</span><span></span></a><div class="fp-tooltip fp-right">Third and last page</div></li><li><a href="#" class=""><span class="fp-sr-only">Section 4</span><span></span></a></li></ul></div>
+  <main class="main fullpage-wrapper" id="fullpage" style="height: 100%; position: relative; touch-action: none; transform: translate3d(0px, 0px, 0px); transition: all 700ms ease 0s;">
+    <div class="section fp-section fp-table active fp-completely" id="section1" data-fp-styles="null" style="height: 354px;"><div class="fp-tableCell" style="height: 354px;">
     <section class="enter-code">
       <div class="enter-code__wrapper">
       <div class="enter-code__main">
@@ -36,7 +45,373 @@
         </div>
         <div class="enter-code__background"></div>
       </div>
-    </section>  
+    </section>
+  </div></div>
+  <div class="section fp-section fp-table" id="section2" data-fp-styles="null" style="height: 354px;"><div class="fp-tableCell" style="height: 354px;">
+    <section class="choose-number">
+      <p class="choose-number__title">Выберите красивый номер</p>
+        <div class="choose-number__area">
+          <form class="choose-number__field" action="">
+            <input class="choose-number__input" name="user-number" placeholder="1234" type="search">
+            <div class="choose-number__input-ico"></div>
+          </form>
+          <div class="choose-number__list">
+          <div class="choose-number__number"><span>+7(000)000-00-00</span></div>
+          <div class="choose-number__number"><span>+7(000)000-00-00</span></div>
+          <div class="choose-number__number"><span>+7(000)000-00-00</span></div>
+          <div class="choose-number__number"><span>+7(000)000-00-00</span></div>
+          <div class="choose-number__number"><span>+7(000)000-00-00</span></div>
+          <div class="choose-number__number"><span>+7(000)000-00-00</span></div>
+          <div class="choose-number__number"><span>+7(000)000-00-00</span></div>
+          <div class="choose-number__number"><span>+7(000)000-00-00</span></div>
+          <div class="choose-number__number"><span>+7(000)000-00-00</span></div>
+          <div class="choose-number__number"><span>+7(000)000-00-00</span></div>
+          <div class="choose-number__number"><span>+7(000)000-00-00</span></div>
+          <div class="choose-number__number"><span>+7(000)000-00-00</span></div>
+          <div class="choose-number__number"><span>+7(000)000-00-00</span></div>
+          <div class="choose-number__number"><span>+7(000)000-00-00</span></div>
+          <div class="choose-number__number"><span>+7(000)000-00-00</span></div>
+          <div class="choose-number__number"><span>+7(000)000-00-00</span></div>
+          <div class="choose-number__number"><span>+7(000)000-00-00</span></div>
+          <div class="choose-number__number"><span>+7(000)000-00-00</span></div>
+          <div class="choose-number__number"><span>+7(000)000-00-00</span></div>
+          <div class="choose-number__number"><span>+7(000)000-00-00</span></div>
+  
+          </div>
+        </div>
+        <div class="choose-number__submit">
+          <div class="choose-number__submit-info">
+            <p class="choose-number__submit-info-top">Ваш номер</p>
+            <p class="choose-number__submit-info-bottom">+7(000)000-00-00</p>
+          </div>
+          <div>
+            <button class="choose-number__button" type="submit">Далее</button>
+          </div>
+        </div>
+      </section>
+    </div></div>
+    <div class="section fp-section fp-table" id="section3" data-fp-styles="null" style="height: 354px;"><div class="fp-tableCell" style="height: 354px;">
+      <section class="select-tariff">
+        <p class="select-tariff__title">Выберите тариф</p>
+        <div class="select-tariff__area">
+            <section class="plans">
+              <div class="limiter">
+            <div class="plans__slider">
+              <div class="plans__list swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-android">
+                <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                  <div class="plans__item plan swiper-slide swiper-slide-active" style="margin-right: 10px;">
+                    <div class="plan__badge"></div>
+                    <div class="plan__row plan__title"></div>
+                    <div class="plan__row plan__price">
+                      <div class="plan__price-value">200 ₽</div>
+                      <div class="plan__price-label">/ мес.</div>
+                    </div>
+                    <div class="plan__row plan__limits">
+                      <div class="plan__limits-item">5 Гб</div>|<div class="plan__limits-item">150 Мин</div>|<div class="plan__limits-item">50 SMS</div>
+                    </div>
+                    <div class="plan__row plan__apps">
+                      <img src="./img/svg/unlim.svg" alt="" class="plan__apps-icon">
+                      <div class="plan__apps-text">Мессенджеры<div class="plan__tooltip">?<div class="plan__tooltip-content">
+                        <div class="plan__tooltip-title">Безлимитный трафик</div>
+                        <ul class="plan__tooltip-list">
+                          <li class="plan__app-category">Мессенджеры:
+                            <ul class="plan__app-list">
+                              <li class="plan__app-icon">
+                                <img alt="" src="./img/svg/tam-tam.svg">
+                              </li>
+                              <li class="plan__app-icon">
+                                <img alt="" src="./img/svg/fb-messenger.svg">
+                              </li>
+                              <li class="plan__app-icon">
+                                <img alt="" src="./img/svg/viber.svg">
+                              </li>
+                              <li class="plan__app-icon">
+                                <img alt="" src="./img/svg/whatsapp.svg">
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="plan__row plan__bonus">
+                  <img src="./img/spasibo.png" alt="" class="plan__bonus-icon">
+                  <div class="plan__bonus-text">Вернем до&nbsp;<strong>1%</strong> бонусами СПАСИБО</div>
+                </div>
+                <div class="plan__row plan__c2a">
+                  <button data-billing-id="1295" class="plan__c2a-btn">Заказать SIM-карту</button>
+                </div>
+                <div class="plan__row plan__config-toggler">
+                  <button data-internet="5" data-minutes="150" class="plan__config-toggler-btn">
+                  <img src="./img/svg/config.svg" alt="" class="plan__config-toggler-icon">
+                  <span class="plan__config-toggler-text">Настроить тариф</span>
+                  </button>
+                </div>
+              </div>
+              <div class="plans__item plan swiper-slide swiper-slide-next" style="margin-right: 10px;">
+                <div class="plan__badge">ВТОРОЙ МЕСЯЦ В ПОДАРОК</div>
+                <div class="plan__row plan__title">Всё что нужно</div>
+                <div class="plan__row plan__price">
+                  <div class="plan__price-value">249 ₽</div>
+                  <div class="plan__price-label">/ мес.</div>
+                </div>
+                <div class="plan__row plan__limits">
+                  <div class="plan__limits-item">15 Гб</div>|<div class="plan__limits-item">400 Мин</div>|<div class="plan__limits-item">50 SMS</div>
+                </div>
+                <div class="plan__row plan__apps">
+                  <img src="./img/svg/unlim.svg" alt="" class="plan__apps-icon">
+                  <div class="plan__apps-text">Мессенджеры<div class="plan__tooltip">?<div class="plan__tooltip-content">
+                    <div class="plan__tooltip-title">Безлимитный трафик</div>
+                    <ul class="plan__tooltip-list">
+                      <li class="plan__app-category">Мессенджеры:
+                        <ul class="plan__app-list">
+                          <li class="plan__app-icon">
+                            <img alt="" src="./img/svg/tam-tam.svg">
+                          </li>
+                          <li class="plan__app-icon">
+                            <img alt="" src="./img/svg/fb-messenger.svg">
+                          </li>
+                          <li class="plan__app-icon">
+                            <img alt="" src="./img/svg/viber.svg">
+                          </li>
+                          <li class="plan__app-icon">
+                            <img alt="" src="./img/svg/whatsapp.svg">
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="plan__row plan__bonus">
+              <img src="./img/spasibo.png" alt="" class="plan__bonus-icon">
+              <div class="plan__bonus-text">Вернем до&nbsp;<strong>20%</strong> бонусами СПАСИБО</div>
+            </div>
+            <div class="plan__row plan__c2a">
+              <button data-billing-id="1311" class="plan__c2a-btn">Заказать SIM-карту</button>
+            </div>
+            <div class="plan__row plan__config-toggler">
+            </div>
+          </div>
+          <div class="plans__item plan swiper-slide" style="margin-right: 10px;">
+            <div class="plan__badge">
+            </div>
+            <div class="plan__row plan__title">
+            </div>
+            <div class="plan__row plan__price">
+              <div class="plan__price-value">450 ₽</div>
+              <div class="plan__price-label">/ мес.</div>
+            </div>
+            <div class="plan__row plan__limits">
+              <div class="plan__limits-item">20 Гб</div>|<div class="plan__limits-item">600 Мин</div>|<div class="plan__limits-item">50 SMS</div>
+            </div>
+            <div class="plan__row plan__apps">
+              <img src="./img/svg/unlim.svg" alt="" class="plan__apps-icon">
+              <div class="plan__apps-text">Мессенджеры, музыка, соц. сети<div class="plan__tooltip">?<div class="plan__tooltip-content">
+                <div class="plan__tooltip-title">Безлимитный трафик</div>
+                <ul class="plan__tooltip-list plan__tooltip-list_multicol">
+                  <li class="plan__app-category">Мессенджеры:<ul class="plan__app-list">
+                    <li class="plan__app-icon">
+                      <img alt="" src="./img/svg/tam-tam.svg">
+                    </li>
+                    <li class="plan__app-icon">
+                      <img alt="" src="./img/svg/fb-messenger.svg">
+                    </li>
+                    <li class="plan__app-icon">
+                      <img alt="" src="./img/svg/viber.svg">
+                    </li>
+                    <li class="plan__app-icon">
+                      <img alt="" src="./img/svg/whatsapp.svg">
+                    </li>
+                  </ul>
+                </li>
+                <li class="plan__app-category">Музыка:<ul class="plan__app-list">
+                  <li class="plan__app-icon">
+                    <img alt="" src="./img/zvooq.png">
+                  </li>
+                </ul>
+              </li>
+              <li class="plan__app-category">Соц. сети:<ul class="plan__app-list">
+                <li class="plan__app-icon">
+                  <img alt="" src="./img/svg/fb.svg">
+                </li>
+                <li class="plan__app-icon">
+                  <img alt="" src="./img/svg/ok.svg">
+                </li>
+                <li class="plan__app-icon">
+                  <img alt="" src="./img/svg/vk.svg">
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="plan__row plan__bonus">
+    <img src="./img/spasibo.png" alt="" class="plan__bonus-icon">
+    <div class="plan__bonus-text">Вернем до&nbsp;<strong>15%</strong> бонусами СПАСИБО</div>
+  </div>
+  <div class="plan__row plan__c2a">
+    <button data-billing-id="1305" class="plan__c2a-btn">Заказать SIM-карту</button>
+  </div>
+  <div class="plan__row plan__config-toggler">
+    <button data-internet="20" data-minutes="600" class="plan__config-toggler-btn">
+    <img src="./img/svg/config.svg" alt="" class="plan__config-toggler-icon">
+    <span class="plan__config-toggler-text">Настроить тариф</span>
+    </button>
+  </div>
+</div>
+<div class="plans__item plan swiper-slide" style="margin-right: 0px;">
+  <div class="plan__badge">
+  </div>
+  <div class="plan__row plan__title">
+  </div>
+  <div class="plan__row plan__price">
+    <div class="plan__price-value">700 ₽</div>
+    <div class="plan__price-label">/ мес.</div>
+  </div>
+  <div class="plan__row plan__limits">
+    <div class="plan__limits-item">20 Гб</div>|<div class="plan__limits-item">1500 Мин</div>|<div class="plan__limits-item">50 SMS</div>
+  </div>
+  <div class="plan__row plan__apps">
+    <img src="./img/svg/unlim.svg" alt="" class="plan__apps-icon">
+    <div class="plan__apps-text">Мессенджеры, музыка, соц. сети, видео<div class="plan__tooltip">?<div class="plan__tooltip-content">
+      <div class="plan__tooltip-title">Безлимитный трафик</div>
+      <ul class="plan__tooltip-list plan__tooltip-list_multicol">
+        <li class="plan__app-category">Мессенджеры:<ul class="plan__app-list">
+          <li class="plan__app-icon">
+            <img alt="" src="./img/svg/tam-tam.svg">
+          </li>
+          <li class="plan__app-icon">
+            <img alt="" src="./img/svg/fb-messenger.svg">
+          </li>
+          <li class="plan__app-icon">
+            <img alt="" src="./img/svg/viber.svg">
+          </li>
+          <li class="plan__app-icon">
+            <img alt="" src="./img/svg/whatsapp.svg">
+          </li>
+        </ul>
+      </li>
+      <li class="plan__app-category">Музыка:<ul class="plan__app-list">
+        <li class="plan__app-icon">
+          <img alt="" src="./img/zvooq.png">
+        </li>
+      </ul>
+    </li>
+    <li class="plan__app-category">Соц. сети:<ul class="plan__app-list">
+      <li class="plan__app-icon">
+        <img alt="" src="./img/svg/fb.svg">
+      </li>
+      <li class="plan__app-icon">
+        <img alt="" src="./img/svg/ok.svg">
+      </li>
+      <li class="plan__app-icon">
+        <img alt="" src="./img/svg/vk.svg">
+      </li>
+    </ul>
+  </li>
+  <li class="plan__app-category">Видео:<ul class="plan__app-list">
+    <li class="plan__app-icon">
+      <img alt="" src="./img/svg/youtube.svg">
+    </li>
+      </ul>
+        </li>
+          </ul>
+          </div> 
+            </div>
+              </div>
+                </div>
+                <div class="plan__row plan__bonus">
+                  <img src="./img/spasibo.png" alt="" class="plan__bonus-icon">
+                  <div class="plan__bonus-text">Вернем до&nbsp;<strong>25%</strong> бонусами СПАСИБО</div>
+                    </div>
+                    <div class="plan__row plan__c2a">
+                    <button data-billing-id="1309" class="plan__c2a-btn">Заказать SIM-карту</button>
+                    </div>
+                      <div class="plan__row plan__config-toggler">
+                        <button data-internet="20" data-minutes="1500" class="plan__config-toggler-btn">
+                          <img src="./img/svg/config.svg" alt="" class="plan__config-toggler-icon">
+                          <span class="plan__config-toggler-text">Настроить тариф</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+              </div>
+            </div>
+          </div>
+        </section>
+        </div>
+      </section>
+    </div></div>
+    <div class="section fp-section fp-table" id="section4" data-fp-styles="null" style="height: 354px;"><div class="fp-tableCell" style="height: 354px;">
+    <section class="delivery">
+      <p class="delivery__title">Оформите доставку</p>
+      <div class="delivery__area">
+        <div class="delivery__info-top">
+          <div class="delivery__wrapper">
+            <p class="delivery__info-title-top">Контактные данные</p>
+            <form class="delivery__form">
+              <input class="delivery__form-input name" type="text" name="" placeholder="Фамилия, имя и отчество*">
+              <input class="delivery__form-input phone" type="text" name="" placeholder="Контактный телефон*">
+              <input class="delivery__form-input date" type="text" name="" placeholder="Дата доставки*">
+              <input class="delivery__form-input time" type="text" name="" placeholder="Интервал доставки">
+              <input class="delivery__form-input city" type="text" name="" placeholder="Населенный пункт">
+              <input class="delivery__form-input address" type="text" name="" placeholder="Адрес">
+            </form>
+          </div>
+        </div>
+        <div class="delivery__info-bottom">
+          <div class="delivery__wrapper">
+            <p class="delivery__info-title-bottom">Ваш заказ</p>
+            <div class="delivery__info-text-area">
+              <div class="delivery__summary">
+                <p class="delivery__summary-option">Выбранный тариф:</p>
+                <p class="delivery__summary-option-name">600 минут, 5гб, 30смс</p>
+                <p class="delivery__summary-tariff-conditions">Обратите внимание, стоимость тарифного плана <br>необходимо внести на счет SIM-карты через курьера.</p>
+                <p class="delivery__summary-option">Способ доставки:</p>
+                <p class="delivery__summary-option-name delivery-type">Курьер - 0 ₽</p>
+                <div class="delivery__payment">
+                  <p class="delivery__payment-type">Наличная или безналичная оплата</p>
+                  <div>
+                    <img class="delivery__payment-ico" src="./img/svg/mastercard.svg" alt="mastercard">
+                    <img class="delivery__payment-ico" src="./img/svg/visa.svg" alt="visa">
+                    <img class="delivery__payment-ico" src="./img/svg/mir.svg" alt="mir">
+                  </div>
+                </div>
+              </div>
+              <div class="delivery__check-and-button-area">
+                <p class="delivery__additional-info">Для заключения договора необходимо предъявить паспорт</p>
+                 <div class="checkbox-container">
+                  <div class="checkbox">
+                    <input type="checkbox" id="delivery-checkbox" name="" value="" checked="checked">
+                      <label for="delivery-checkbox"></label>
+                  </div>
+                  <div class="checkbox-container__text">
+                      <p class="checkbox-text">Я согласен с <a href="#" class="checkbox-link">условиями оказания услуг,</a> с <a href="#" class="checkbox-link">использованием моих персональных данных,</a> и&nbsp;ознакомлен&nbsp;с&nbsp;<a href="#" class="checkbox-link">условиями доставки</a></p>
+                  </div>
+                </div>
+                <button class="delivery__button">Подтвердить заказ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>   
+    </div></div>   
   </main>
-</body>
-</html>
+
+<script type="text/javascript" src="./libs/fullpage.js"></script>
+<script>
+    var myFullpage = new fullpage('#fullpage', {
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['First page', 'Second page', 'Third and last page']
+    });
+
+</script><div id="fp-nav" style="margin-top: -43.5px;"><ul></ul></div>
+</body></html>

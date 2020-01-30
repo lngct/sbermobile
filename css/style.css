@@ -555,6 +555,14 @@ body {
   color: #CECECE;
 }
 
+.enter-code__input::-moz-placeholder {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: #CECECE;
+  line-height: 3;
+}
+
 .enter-code__button {
   padding: 20px 88px; 
   background: #00AC32;
@@ -659,9 +667,15 @@ body {
     font-size: 16px;
     letter-spacing: 15px;
   }
+  
   .enter-code__input::placeholder {
     font-size: 16px;
     line-height: 19px;
+  }
+
+  .enter-code__input::-moz-placeholder {
+    font-size: 16px;
+    line-height: 3;
   }
 }
 
@@ -1179,6 +1193,13 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 22px;
+}
+
+.delivery__form-input::-moz-placeholder {
+  color: #CECECE;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 3;
 }
 
 .delivery__form-input {
