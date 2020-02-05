@@ -419,10 +419,9 @@ body {
 /* Header styles */ 
 
 .header{
-  display: flex;
-  flex-direction: row;
-  max-width: 1440px;
-  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  width: 100vw;
 }
 
 .header__logo {
@@ -434,6 +433,13 @@ body {
   background: url(../img/svg/logo.svg) no-repeat center;
   width: 198px;
   height: 44px;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 @media (max-width: 1024px) {
@@ -454,11 +460,17 @@ body {
   .header{
     max-width: 768px;
     margin: 0 auto;
+    z-index: 100;
   }
 
   .header__logo {
     margin-top: 45px;
     margin-left: 40px;
+  }
+  .fp-viewing-enterCode .header__logo-pic {
+    background: url(../img/svg/logo-wh.svg) no-repeat center;
+    width: 198px;
+    height: 44px;
   }
 } 
 
@@ -475,6 +487,8 @@ body {
     margin: 0 auto;
   }
 }
+
+/*
 
 .main {
   margin-top: -84px; 
@@ -493,6 +507,9 @@ body {
   	margin-top: -89px; 
   }
 } 
+
+*/
+
 
 /* enter-code section styles is down here */
 
@@ -553,14 +570,6 @@ body {
   line-height: 24px;
   letter-spacing: normal;
   color: #CECECE;
-}
-
-.enter-code__input::-moz-placeholder {
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: normal;
-  color: #CECECE;
-  line-height: 3;
 }
 
 .enter-code__button {
@@ -667,15 +676,9 @@ body {
     font-size: 16px;
     letter-spacing: 15px;
   }
-  
   .enter-code__input::placeholder {
     font-size: 16px;
     line-height: 19px;
-  }
-
-  .enter-code__input::-moz-placeholder {
-    font-size: 16px;
-    line-height: 3;
   }
 }
 
@@ -813,11 +816,16 @@ body {
 
 /* choose-number__list scrollbar css is here. unfinished yet */
 
-/*
+
 
 .choose-number__list::-webkit-scrollbar {
-  width: 10px;
+  width: 0;
 }
+
+.select-tariff__area::-webkit-scrollbar {
+  width: 0;
+}
+/* 
 
 .choose-number__list::-webkit-scrollbar-track {
   background: transparent;
@@ -831,10 +839,16 @@ body {
 
 */
 
+@media (max-width: 1300px) {
+  .choose-number {
+  margin: 0px 120px 0px 60px;
+  }
+}
+
 @media (max-width: 1024px) {
   .choose-number {
   align-items: flex-start;
-  margin: 0px 50px 0px 65px;
+  margin: 0px 125px 0px 65px;
   }
 
   .choose-number__title {
@@ -846,7 +860,6 @@ body {
   .choose-number__area {
   max-width: 835px;
   height: 310px;
-  margin-right: 50px;
   margin-bottom: 30px;
   }
   
@@ -891,7 +904,7 @@ body {
 
 @media (max-width: 768px) {
   .choose-number {
-  margin: 0px 30px 0px 40px;
+  margin: 0px 70px 0px 40px;
   }
 
   .choose-number__title {
@@ -921,9 +934,33 @@ body {
 }
 
 @media (max-width: 620px) {
+  .choose-number {
+    margin: 0;
+    align-items: center;
+  }
+  
   .choose-number__submit {
   	flex-direction: column;
   	height: 100%;
+  }
+
+  .choose-number__title {
+    margin: 0px 40px;
+  }
+
+  .choose-number__area {
+    margin: 0px 0px 0px 0px;
+    border: 0;
+    box-shadow: none;
+    border-radius: 0;
+    min-height: 360px;
+  }
+
+  .choose-number__input-ico {
+    display: flex;
+    background: url(../img/svg/searchicon-sm.svg) no-repeat;
+    width: 13px;
+    height: 13px;
   }
 
   .choose-number__submit-info {
@@ -931,6 +968,12 @@ body {
     flex-direction: column;
     align-items: center;
   	margin: 20px 0px;
+  }
+    .choose-number__submit {
+    margin: 0;
+    border: 0;
+    box-shadow: none;
+    border-radius: 0;
   }
 
   .choose-number__button {
@@ -942,24 +985,15 @@ body {
 
 @media (max-width: 375px) {
 
-  .choose-number {
-  	margin: 0;
-  	align-items: center;
+  .choose-number__area {
+    margin: 0px 0px 50px 0px;
   }
-
+  
   .choose-number__title {
     padding-top: 140px;
     padding-bottom: 30px;
     font-size: 16px;
     line-height: 19px;
-  }
-
-  .choose-number__area {
-  	margin: 0px 0px 50px 0px;
-  	border: 0;
-  	box-shadow: none;
-  	border-radius: 0;
-  	min-height: 360px;
   }
   
   .choose-number__field {
@@ -970,12 +1004,7 @@ body {
   	font-size: 14px;
   }
 
-  .choose-number__input-ico {
-  	display: flex;
-  	background: url(../img/svg/searchicon-sm.svg) no-repeat;
-  	width: 13px;
-  	height: 13px;
-  }
+
   
   .choose-number__list {
   	max-height: 335px;
@@ -1021,8 +1050,30 @@ body {
 /* select-tariff section css is here */
 
 .plans {
-  transform: scale(0.9); 
-  margin-left: -20px;
+  transform: scale(0.85);
+  margin-left: -45px;
+}
+
+@media screen and (max-width: 1024px) {
+  .plans {
+    margin-top: -20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .plans {
+    margin-left: -30px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .plans {
+    margin-left: 0;
+  }
+
+  .limiter {
+    padding-right: 20px;
+  }
 }
 
 .select-tariff {
@@ -1051,14 +1102,14 @@ body {
   box-sizing: border-box;
   box-shadow: 0px 4px 100px rgba(236, 235, 237, 0.75);
   border-radius: 20px;
+  margin-bottom: 60px;
 }
 
-.select-tariff__area-inside {
-  overflow-y: hidden;
-  overflow-x: scroll; 
-
+@media (max-width: 1300px) {
+  .select-tariff {
+  margin: 0px 120px 0px 60px;
+  }
 }
-
 
 @media screen and (max-width: 1024px) {
   
@@ -1075,7 +1126,6 @@ body {
 
   .select-tariff__area {
     max-height: 485px;
-    margin-bottom: 60px;
   }
 }
 
@@ -1193,13 +1243,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 22px;
-}
-
-.delivery__form-input::-moz-placeholder {
-  color: #CECECE;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 3;
 }
 
 .delivery__form-input {
@@ -1422,6 +1465,12 @@ body {
   background: #319B42;
 }
 
+@media (max-width: 1300px) {
+  .delivery {
+  margin: 0px 120px 0px 60px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   
   .delivery {
@@ -1484,7 +1533,7 @@ body {
 @media screen and (max-width: 930px) {
 
   .delivery {
-    margin: 0px 70px 0px 40px;  	
+    /* margin: 0px 70px 0px 40px;  	*/
   }
 
   .delivery__additional-info {
@@ -1518,6 +1567,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+
+  .delivery {
+    margin: 0px 70px 0px 40px;   
+  }
 
   .delivery__title {
   	padding-top: 150px;
@@ -1666,4 +1719,7 @@ body {
   	padding: 18px 54px;
   }
 
+}
+.iScrollIndicator {
+  display: none !important;
 }

@@ -1,37 +1,37 @@
 <!DOCTYPE html>
-<html lang="ru" class="fp-enabled" style="overflow: hidden; height: 100%;"><head>
+<html lang="ru">
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <title>СберМобайл</title>
   <link rel="stylesheet" type="text/css" href="./css/style_from_sbermobile.css"> 
+  <link rel="stylesheet" type="text/css" href="./dist/fullpage.css">
   <link rel="stylesheet" type="text/css" href="./css/style.css">  
-  <link rel="stylesheet" type="text/css" href="./css/fullpage.css">  
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption&amp;display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap" rel="stylesheet">
-<!--
-  <style>
-    @media (max-width: 768px) {
-      .header__logo-pic {
-        background: url(./img/svg/logo-wh.svg) no-repeat center;
-      }
-    }
-  </style>
--->
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
-<body class="fp-viewing-0" style="overflow: hidden; height: 100%;">
+<body>
   <header class="header">
     <div class="header__wrapper">
-      <div class="header__logo">
-        <a class="header__logo-link" href="/">
-          <div class="header__logo-pic"></div>
-        </a>
-      </div>
+    <div class="header__logo">
+      <a class="header__logo-link" href="/">
+        <div class="header__logo-pic"></div>
+      </a>
     </div>
+  </div>
   </header>
-      <div id="fp-nav" class="fp-nav fp-right" style="margin-top: -43.5px;"><ul><li><a href="#" class="active"><span class="fp-sr-only">First page</span><span></span></a><div class="fp-tooltip fp-right">First page</div></li><li><a href="#" class=""><span class="fp-sr-only">Second page</span><span></span></a><div class="fp-tooltip fp-right">Second page</div></li><li><a href="#" class=""><span class="fp-sr-only">Third and last page</span><span></span></a><div class="fp-tooltip fp-right">Third and last page</div></li><li><a href="#" class=""><span class="fp-sr-only">Section 4</span><span></span></a></li></ul></div>
-  <main class="main fullpage-wrapper" id="fullpage" style="height: 100%; position: relative; touch-action: none; transform: translate3d(0px, 0px, 0px); transition: all 700ms ease 0s;">
-    <div class="section fp-section fp-table active fp-completely" id="section1" data-fp-styles="null" style="height: 354px;"><div class="fp-tableCell" style="height: 354px;">
+  <div id="fp-nav" class="fp-nav fp-right">
+    <ul id="myMenu">
+      <li data-menuanchor="enterCode" class="active"><a href="#enterCode"></a></li>
+      <li data-menuanchor="chooseNumber"><a href="#chooseNumber"></a></li>
+      <li data-menuanchor="selectTariff"><a href="#selectTariff"></a></li>
+      <li data-menuanchor="delivery"><a href="#delivery"></a></li>
+    </ul>
+  </div>
+<div id="fullpage">
+  <main class="main">
+    <div class="section" id="section0">
     <section class="enter-code">
       <div class="enter-code__wrapper">
       <div class="enter-code__main">
@@ -46,16 +46,16 @@
         <div class="enter-code__background"></div>
       </div>
     </section>
-  </div></div>
-  <div class="section fp-section fp-table" id="section2" data-fp-styles="null" style="height: 354px;"><div class="fp-tableCell" style="height: 354px;">
+  </div>
+  <div class="section" id="section1">
     <section class="choose-number">
-      <p class="choose-number__title">Выберите красивый номер</p>
+        <p class="choose-number__title">Выберите красивый номер</p>
         <div class="choose-number__area">
           <form class="choose-number__field" action="">
             <input class="choose-number__input" name="user-number" placeholder="1234" type="search">
             <div class="choose-number__input-ico"></div>
           </form>
-          <div class="choose-number__list">
+          <div class="choose-number__list scrollable-element">
           <div class="choose-number__number"><span>+7(000)000-00-00</span></div>
           <div class="choose-number__number"><span>+7(000)000-00-00</span></div>
           <div class="choose-number__number"><span>+7(000)000-00-00</span></div>
@@ -88,13 +88,13 @@
             <button class="choose-number__button" type="submit">Далее</button>
           </div>
         </div>
-      </section>
-    </div></div>
-    <div class="section fp-section fp-table" id="section3" data-fp-styles="null" style="height: 354px;"><div class="fp-tableCell" style="height: 354px;">
-      <section class="select-tariff">
+    </section>
+  </div>
+  <div class="section" id="section2">
+    <section class="select-tariff">
         <p class="select-tariff__title">Выберите тариф</p>
         <div class="select-tariff__area">
-            <section class="plans">
+            <section class="plans data-srcset scrollable-element">
               <div class="limiter">
             <div class="plans__slider">
               <div class="plans__list swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-android">
@@ -347,8 +347,8 @@
         </section>
         </div>
       </section>
-    </div></div>
-    <div class="section fp-section fp-table" id="section4" data-fp-styles="null" style="height: 354px;"><div class="fp-tableCell" style="height: 354px;">
+    </div>
+    <div class="section" id="section3">
     <section class="delivery">
       <p class="delivery__title">Оформите доставку</p>
       <div class="delivery__area">
@@ -401,17 +401,19 @@
           </div>
         </div>
       </div>
-    </section>   
-    </div></div>   
+    </section>
+    </div>      
   </main>
-
-<script type="text/javascript" src="./libs/fullpage.js"></script>
-<script>
+</div>
+<script type="text/javascript" src="./vendors/scrolloverflow.js"></script>
+<script type="text/javascript" src="./dist/fullpage.js"></script>
+<script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
-        navigation: true,
-        navigationPosition: 'right',
-        navigationTooltips: ['First page', 'Second page', 'Third and last page']
+        anchors: ['enterCode', 'chooseNumber', 'selectTariff', 'delivery'],
+        scrollOverflow: true,
+        normalScrollElements: '.scrollable-element',
+        menu: '#myMenu'
     });
-
-</script><div id="fp-nav" style="margin-top: -43.5px;"><ul></ul></div>
-</body></html>
+</script>
+</body>
+</html>
