@@ -540,8 +540,8 @@ body {
   font-weight: normal;
   font-style: normal;
   padding-left: 27px;
-  font-size: 24px;
-  letter-spacing: 15px;
+  font-size: 20px;
+  /* letter-spacing: 15px; */
   background: #F8F8F8;
   color: #363A37;
   border-radius: 5px;
@@ -554,7 +554,12 @@ body {
   letter-spacing: normal;
   color: #CECECE;
 }
-
+.enter-code__input::-moz-placeholder {
+  font-size: 20px;
+  line-height: 3;
+  letter-spacing: normal;
+  color: #CECECE;
+}
 .enter-code__button {
   padding: 20px 88px; 
   background: #00AC32;
@@ -662,6 +667,10 @@ body {
   .enter-code__input::placeholder {
     font-size: 16px;
     line-height: 19px;
+  }
+  .enter-code__input::-moz-placeholder {
+    font-size: 16px;
+    line-height: 3;
   }
 }
 
@@ -1181,6 +1190,13 @@ body {
   line-height: 22px;
 }
 
+.delivery__form-input::-moz-placeholder {
+  color: #CECECE;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 3;
+}
+
 .delivery__form-input {
   padding-left: 30px;
   height: 53px;
@@ -1646,3 +1662,16 @@ body {
   }
 
 }
+<<<<<<< Updated upstream
+=======
+.iScrollIndicator {
+  display: none !important;
+}
+
+.hide-scrollbar
+{
+    overflow: auto;
+    -ms-overflow-style: none; /* IE 11 */
+    scrollbar-width: none; /* Firefox 64 */
+}
+>>>>>>> Stashed changes
